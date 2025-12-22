@@ -1,125 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>CV - Abderahmane MAROUF</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* General styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f6f8;
-            color: #333;
-        }
-
-        a {
-            color: #0077cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Layout */
-        header {
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            padding: 15px 0;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            font-weight: bold;
-            color: #333;
-        }
-
-        nav ul li a:hover {
-            color: #0077cc;
-        }
-
-        .container {
-            display: flex;
-            max-width: 1100px;
-            margin: 20px auto;
-            padding: 20px;
-            gap: 30px;
-        }
-
-        /* Sidebar */
-        .sidebar {
-            width: 250px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-
-        .sidebar img {
-            width: 180px;
-            border-radius: 50%;
-            border: 2px solid #0077cc;
-            margin-bottom: 15px;
-        }
-
-        .sidebar h2 {
-            margin: 10px 0 5px;
-        }
-
-        .sidebar p {
-            margin: 5px 0;
-            font-size: 0.95rem;
-            color: #555;
-        }
-
-        .sidebar a {
-            display: block;
-            margin: 5px 0;
-            font-size: 0.9rem;
-        }
-
-        /* Main content */
-        .main-content {
-            flex: 1;
-        }
-
-        .main-content h2 {
-            color: #0077cc;
-        }
-
-        .main-content section {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        /* Responsive */
-        @media (max-width: 900px) {
-            .container {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -135,37 +19,52 @@
     </header>
 
     <div class="container">
-        <!-- Sidebar -->
         <div class="sidebar">
             <img src="images/Abderahmane-Marouf.jpg" alt="Abderahmane MAROUF">
             <h2>Abderahmane MAROUF</h2>
-            <p>Assistant Professor</p>
-            <p>📍 Tempe, AZ</p>
+            <p>Associate Professor</p>
+            <p>📍 Strasbourg, France</p>
             <p>✉️ <a href="mailto:abderahmane@email.com">abderahmane@email.com</a></p>
             <a href="#">Twitter</a>
             <a href="#">LinkedIn</a>
             <a href="#">GitHub</a>
         </div>
 
-        <!-- Main content -->
         <div class="main-content">
             <section id="about">
                 <h2>About</h2>
-                <p>
-                    I am an Assistant Professor specializing in web development and computer science research. My work focuses on modern web technologies, user experience design, and scalable web architectures.
-                </p>
-                <p>
-                    In teaching, I focus on practical, hands-on courses in web development, software engineering, and programming fundamentals. I am passionate about mentoring students and fostering collaborative learning environments.
-                </p>
-                <p>
-                    Associate Professor, University of Strasbourg, Sep 2021 - Present<br>
-                    ICUBE Laboratory, Department of Mechanics, MécaFlu team, Strasbourg, France<br>
-                    – Head of Master 1 (MMEE) in the Faculty of Physics and Engineering. Master in Applied Physics and Physical Engineering, specializing in Mechanical Modeling for Energy and Environment. International double degree program.<br>
-                    – Research: Fluid Mechanics, Aerodynamics, Turbulence, Transition, Morphing, Flow Control, Particle Transport, and Machine Learning.
-                </p>
-            </section>
 
-            <!-- You can add more sections like Publications, Teaching, Talks, etc. -->
+                <p>
+                    I am an Associate Professor at the University of Strasbourg, affiliated with the ICUBE
+                    Laboratory (Department of Mechanics, MécaFlu team). My work combines research, teaching,
+                    and academic leadership in applied physics and engineering.
+                </p>
+
+                <h3>Academic Position</h3>
+                <p class="position">
+                    <strong>Associate Professor</strong> — University of Strasbourg<br>
+                    <span class="muted">September 2021 – Present | Strasbourg, France</span><br>
+                    ICUBE Laboratory, Department of Mechanics, MécaFlu Team
+                </p>
+
+                <h3>Academic Responsibilities</h3>
+                <ul>
+                    <li>Head of Master 1 (MMEE), Faculty of Physics and Engineering</li>
+                    <li>Master in Applied Physics and Physical Engineering</li>
+                    <li>Specialization: Mechanical Modeling for Energy and Environment</li>
+                    <li>Coordination of an international double degree program</li>
+                </ul>
+
+                <h3>Research Topics</h3>
+                <ul class="research-topics">
+                    <li>Fluid Mechanics</li>
+                    <li>Aerodynamics</li>
+                    <li>Turbulence and Transition</li>
+                    <li>Morphing and Flow Control</li>
+                    <li>Particle Transport</li>
+                    <li>Machine Learning for Fluid Mechanics</li>
+                </ul>
+            </section>
         </div>
     </div>
 </body>
