@@ -79,6 +79,14 @@ nav ul li a {
     font-size: 0.9rem;
 }
 
+.sidebar i {
+    font-size: 20px; /* adjust size */
+    margin-right: 8px; /* space between icon and text */
+}
+.sidebar a {
+    display: flex;
+    align-items: center;
+}
 .main-content {
     flex: 1;
 }
