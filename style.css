@@ -1,4 +1,3 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,11 +11,11 @@ a {
     color: #0077cc;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
 
-/* Header and navigation */
 header {
     background: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -38,14 +37,8 @@ nav ul li {
 nav ul li a {
     font-weight: bold;
     color: #333;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #0077cc;
-}
-
-/* Layout container */
 .container {
     display: flex;
     max-width: 1100px;
@@ -54,7 +47,6 @@ nav ul li a:hover {
     gap: 30px;
 }
 
-/* Sidebar */
 .sidebar {
     width: 250px;
     background: #fff;
@@ -87,13 +79,21 @@ nav ul li a:hover {
     font-size: 0.9rem;
 }
 
-/* Main content */
 .main-content {
     flex: 1;
 }
 
 .main-content h2 {
     color: #0077cc;
+}
+
+.main-content h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 1.1rem;
+    border-left: 4px solid #0077cc;
+    padding-left: 10px;
 }
 
 .main-content section {
@@ -104,7 +104,30 @@ nav ul li a:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* Responsive */
+.position {
+    margin-bottom: 15px;
+}
+
+.muted {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.main-content ul {
+    margin: 10px 0 15px 20px;
+    padding: 0;
+}
+
+.main-content ul li {
+    margin-bottom: 6px;
+}
+
+.research-topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 6px 20px;
+}
+
 @media (max-width: 900px) {
     .container {
         flex-direction: column;
@@ -112,6 +135,5 @@ nav ul li a:hover {
 
     .sidebar {
         width: 100%;
-        margin-bottom: 20px;
     }
 }
