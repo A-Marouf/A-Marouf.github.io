@@ -5,14 +5,17 @@
     <title>CV - Abderahmane MAROUF</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Optional internal styling for quick setup */
+        /* General body styles */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
 
+        /* Header navigation */
         header {
             background-color: #f4f4f4;
             padding: 10px 0;
@@ -36,36 +39,53 @@
             font-weight: bold;
         }
 
+        /* Main container */
         main {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
         }
 
+        /* CV header section */
         #about {
-            text-align: center;
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
         }
 
         #about .profile {
             width: 200px;
-            border-radius: 50%;
+            border-radius: 10px;
             border: 2px solid #333;
-            display: block;
-            margin: 0 auto 20px;
         }
 
-        #about h1 {
-            margin: 10px 0 5px;
+        #about .info {
+            flex: 1;
         }
 
-        #about p {
+        #about .info h1 {
+            margin: 0 0 10px;
+        }
+
+        #about .info p {
             margin: 5px 0;
         }
 
-        #about a {
+        #about .info a {
             text-decoration: none;
             color: #0077cc;
-            margin: 0 5px;
+            margin-right: 10px;
+        }
+
+        /* About section */
+        #about-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #about-section h2 {
+            margin-top: 0;
         }
     </style>
 </head>
@@ -83,18 +103,24 @@
     </header>
 
     <main>
+        <!-- CV header: image on the left, info on the right -->
         <section id="about">
             <img src="images/Abderahmane-Marouf.jpg" alt="Abderahmane MAROUF" class="profile">
-            <h1>Abderahmane MAROUF</h1>
-            <p>Assistant Professor / Développeur Web</p>
-            <p>📍 Tempe, AZ</p>
-            <p>✉️ Email : abderahmane@email.com</p>
-            <p>
-                <a href="#">Twitter</a> |
-                <a href="#">LinkedIn</a> |
-                <a href="#">GitHub</a>
-            </p>
+            <div class="info">
+                <h1>Abderahmane MAROUF</h1>
+                <p>Assistant Professor / Développeur Web</p>
+                <p>📍 Tempe, AZ</p>
+                <p>✉️ Email: <a href="mailto:abderahmane@email.com">abderahmane@email.com</a></p>
+                <p>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                </p>
+            </div>
         </section>
-    </main>
-</body>
-</html>
+
+        <!-- About section for research and teaching -->
+        <section id="about-section">
+            <h2>About</h2>
+            <p>
+                I am an Assistant Professor specializing in web development and computer science research. My work focuses on modern web technologies, us
