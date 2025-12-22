@@ -1,14 +1,21 @@
+/* General body styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background: #f4f6f8; /* slightly softer background */
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Header and navigation */
 header {
     background: #fff;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav ul {
@@ -17,6 +24,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; /* responsive for small screens */
 }
 
 nav ul li {
@@ -27,21 +35,90 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #0077cc;
 }
 
-.profile {
-    width: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-}
-
+/* Main container */
 main {
     max-width: 900px;
     margin: auto;
     padding: 20px;
+}
+
+/* CV Header (profile + info) */
+#about {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* responsive */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.profile {
+    width: 180px;
+    border-radius: 10px; /* slightly rounded instead of full circle */
+    border: 2px solid #0077cc;
+    flex-shrink: 0;
+}
+
+#about .info {
+    flex: 1;
+}
+
+#about .info h1 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+}
+
+#about .info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+#about .info a {
+    color: #0077cc;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#about .info a:hover {
+    text-decoration: underline;
+}
+
+/* About section */
+#about-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+#about-section h2 {
+    margin-top: 0;
+    color: #0077cc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .info {
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
 }
