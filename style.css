@@ -287,3 +287,40 @@ footer {
     display: block; /* Makes the GIFs behave like block elements */
     margin: 10px; /* Adds margin around each GIF */
 }
+
+/* Publications list styling */
+.publications-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.publications-list li {
+    margin-bottom: 18px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.publications-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0077cc;
+    font-size: 1.2rem;
+}
+
+.publications-list em {
+    font-style: italic;
+    color: #444;
+}
+
+.publications-list a {
+    margin-left: 6px;
+    font-size: 0.9rem;
+}
+
+.publications-list a:hover {
+    text-decoration: underline;
+}
