@@ -246,8 +246,8 @@ footer {
 }
 
 .project-gif {
-    width: 250px; /* Adjust the width to a smaller size */
+    width: 500px; /* Adjust the width to a smaller size */
     height: auto; /* Keeps the aspect ratio intact */
     display: block;
-    margin: 10px 0;
+    margin: 10px auto;
 }
