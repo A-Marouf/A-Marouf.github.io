@@ -146,6 +146,7 @@ nav ul li a {
     }
 }
 
+
 footer {
     background: #d3d3d3;  /* Light grey color */
     color: #fff;
@@ -164,8 +165,21 @@ footer {
     gap: 40px;
 }
 
-.footer-left, .footer-center, .footer-right {
+.footer-left {
     flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-center {
+    flex: 2;
+    text-align: center;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .footer-left img {
@@ -196,6 +210,8 @@ footer {
         gap: 20px;
     }
 }
+
+
 
 #research-projects {
     font-family: Arial, sans-serif;
