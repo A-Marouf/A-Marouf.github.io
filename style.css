@@ -245,8 +245,24 @@ footer {
     margin-bottom: 0;
 }
 
+
+.project-gif0 {
+    width: 700px; /* Adjust the width to a smaller size */
+    height: auto; /* Keeps the aspect ratio intact */
+    display: block;
+    margin: 10px auto;
+}
+
 .project-gif {
     width: 500px; /* Adjust the width to a smaller size */
+    height: auto; /* Keeps the aspect ratio intact */
+    display: block;
+    margin: 10px auto;
+}
+
+
+.project-gif2 {
+    width: 400px; /* Adjust the width to a smaller size */
     height: auto; /* Keeps the aspect ratio intact */
     display: block;
     margin: 10px auto;
