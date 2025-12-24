@@ -324,17 +324,6 @@ footer {
 .publications-list a:hover {
     text-decoration: underline;
 }
-
-.talk-item {
-    display: flex;
-    align-items: flex-start;
-    background: #fff;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
 .talk-img {
     height: auto;
     margin-right: 20px;
@@ -342,7 +331,7 @@ footer {
     border: 1px solid #ddd;
 }
 
-/* 🔒 STRONG, SPECIFIC RULES */
+/* MUST be written like this */
 .talk-img.talk1 { width: 120px; }
 .talk-img.talk2 { width: 130px; }
 .talk-img.talk3 { width: 130px; }
@@ -351,21 +340,3 @@ footer {
 .talk-img.talk6 { width: 140px; }
 .talk-img.talk7 { width: 120px; }
 
-.talk-text p {
-    margin: 0;
-    line-height: 1.5;
-}
-
-/* Responsive */
-@media (max-width: 800px) {
-    .talk-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .talk-img {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-}
