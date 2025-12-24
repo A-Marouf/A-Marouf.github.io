@@ -340,3 +340,70 @@ footer {
 .talk-img.talk6 { width: 140px; }
 .talk-img.talk7 { width: 120px; }
 
+/* ========================= */
+/* TEACHING PAGE STYLES */
+/* ========================= */
+
+.teaching-page section {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.teaching-page h2 {
+    color: #0077cc;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+}
+
+/* Logos */
+.teaching-logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.teaching-logo-item {
+    text-align: center;
+    max-width: 240px;
+}
+
+.teaching-logo-item img {
+    max-height: 90px;
+    margin-bottom: 10px;
+}
+
+/* Teaching table */
+.teaching-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.teaching-table th,
+.teaching-table td {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    vertical-align: top;
+}
+
+.teaching-table th {
+    background-color: #f0f2f5;
+    font-weight: bold;
+}
+
+.teaching-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Responsive table */
+@media (max-width: 900px) {
+    .teaching-table {
+        font-size: 0.85rem;
+    }
+}
