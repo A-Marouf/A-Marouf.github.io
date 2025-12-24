@@ -325,6 +325,7 @@ footer {
     text-decoration: underline;
 }
 
+
 .talk-item {
     display: flex;
     align-items: flex-start;
@@ -336,18 +337,27 @@ footer {
 }
 
 .talk-img {
-    width: 120px; /* adjust as needed */
     height: auto;
     margin-right: 20px;
     border-radius: 5px;
     border: 1px solid #ddd;
 }
 
+/* Individual talk image sizes */
+.talk1 { width: 120px; }
+.talk2 { width: 130px; }
+.talk3 { width: 130px; }
+.talk4 { width: 130px; }
+.talk5 { width: 150px; }
+.talk6 { width: 140px; }
+.talk7 { width: 120px; }
+
 .talk-text p {
     margin: 0;
     line-height: 1.5;
 }
 
+/* Responsive for small screens */
 @media (max-width: 800px) {
     .talk-item {
         flex-direction: column;
@@ -360,4 +370,3 @@ footer {
         margin-bottom: 10px;
     }
 }
-
