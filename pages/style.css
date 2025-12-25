@@ -555,3 +555,55 @@ img {
     font-size: 1.1rem;
   }
 }
+
+/* =========================
+   TEACHING HIGHLIGHT SECTION
+   ========================= */
+
+.teaching-highlight {
+    background: linear-gradient(135deg, #ffffff, #f0f4f8);
+    border-left: 6px solid #0077cc;
+}
+
+.highlight-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.highlight-content img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+}
+
+.highlight-text h2 {
+    margin: 0 0 8px;
+    color: #0077cc;
+}
+
+.highlight-text h3 {
+    margin: 0 0 10px;
+    font-size: 1.15rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.highlight-text p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .highlight-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .highlight-content img {
+        width: 140px;
+    }
+}
+
