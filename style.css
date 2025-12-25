@@ -536,3 +536,145 @@ footer {
         height: 120px;
     }
 }
+
+
+/* =========================
+   MOBILE OPTIMIZATIONS
+   ========================= */
+
+/* ---------- General ---------- */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
+
+/* ---------- Navigation ---------- */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* ---------- Sidebar ---------- */
+@media (max-width: 600px) {
+  .sidebar img {
+    width: 140px;
+  }
+
+  .sidebar p,
+  .sidebar a {
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- Headings ---------- */
+@media (max-width: 600px) {
+  .main-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .main-content h3 {
+    font-size: 1rem;
+  }
+}
+
+/* ---------- Images & GIFs ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-gif0,
+.project-gif,
+.project-gif2 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.gif-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- Research Projects ---------- */
+@media (max-width: 600px) {
+  #research-projects h2 {
+    font-size: 1.6rem;
+  }
+
+  #research-projects h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* ---------- Stats Section ---------- */
+@media (max-width: 600px) {
+  .stats-box {
+    padding: 25px 15px;
+  }
+
+  .stat h2 {
+    font-size: 2rem;
+  }
+
+  .stat p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------- Teaching Table (Mobile Scroll) ---------- */
+@media (max-width: 600px) {
+  .teaching-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* ---------- Footer ---------- */
+@media (max-width: 600px) {
+  footer {
+    padding: 20px 10px;
+  }
+
+  .footer-left img {
+    max-width: 140px;
+  }
+
+  .footer-center p,
+  .footer-right p {
+    font-size: 0.85rem;
+  }
+}
+
+/* ---------- Students ---------- */
+@media (max-width: 600px) {
+  .student-card {
+    padding: 15px;
+  }
+
+  .student-card img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .student-card h2 {
+    font-size: 1.1rem;
+  }
+}
+
