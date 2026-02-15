@@ -678,3 +678,23 @@ img {
   }
 }
 
+.skill-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 5px;
+    scrollbar-width: thin;
+}
+
+.skill-carousel::-webkit-scrollbar {
+    height: 6px;
+}
+
+.skill-carousel::-webkit-scrollbar-thumb {
+    background: #0077cc;
+    border-radius: 3px;
+}
+
+.skill-carousel::-webkit-scrollbar-track {
+    background: #f0f2f5;
+}
