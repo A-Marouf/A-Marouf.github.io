@@ -1,760 +1,237 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f6f8;
-    color: #333;
-    line-height: 1.6;
-}
-
-a {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-header {
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 15px 0;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    font-weight: bold;
-    color: #333;
-}
-
-.container {
-    display: flex;
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px;
-    gap: 30px;
-}
-
-.sidebar {
-    width: 250px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    text-align: center;
-}
-
-.sidebar img {
-    width: 180px;
-    border-radius: 50%;
-    border: 2px solid #0077cc;
-    margin-bottom: 15px;
-}
-
-.sidebar h2 {
-    margin: 10px 0 5px;
-}
-
-.sidebar p {
-    margin: 5px 0;
-    font-size: 0.95rem;
-    color: #555;
-}
-
-.sidebar a {
-    display: block;
-    margin: 5px 0;
-    font-size: 0.9rem;
-}
-
-.sidebar i {
-    font-size: 20px; /* adjust size */
-    margin-right: 8px; /* space between icon and text */
-}
-.sidebar a {
-    display: flex;
-    align-items: center;
-}
-.main-content {
-    flex: 1;
-}
-
-.main-content h2 {
-    color: #0077cc;
-}
-
-.main-content h3 {
-    margin-top: 20px;
-    margin-bottom: 8px;
-    color: #444;
-    font-size: 1.1rem;
-    border-left: 4px solid #0077cc;
-    padding-left: 10px;
-}
-
-.main-content section {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.position {
-    margin-bottom: 15px;
-}
-
-.muted {
-    color: #777;
-    font-size: 0.9rem;
-}
-
-.main-content ul {
-    margin: 10px 0 15px 20px;
-    padding: 0;
-}
-
-.main-content ul li {
-    margin-bottom: 6px;
-}
-
-.research-topics {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 6px 20px;
-}
-
-@media (max-width: 900px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-    }
-}
-
-
-footer {
-    background: #d3d3d3;  /* Light grey color */
-    color: #fff;
-    padding: 30px 0;
-    margin-top: 40px;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-    gap: 40px;
-}
-
-.footer-left {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.footer-center {
-    flex: 2;
-    text-align: center;
-}
-
-.footer-right {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.footer-left img {
-    max-width: 180px;
-}
-
-.footer-center p, .footer-right p {
-    margin: 5px 0;
-    font-size: 0.9rem;
-}
-
-.footer-center a {
-    color: #fff;
-    font-weight: bold;
-}
-
-.footer-center a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 900px) {
-    footer {
-        text-align: center;
-        padding: 20px;
-    }
-    .footer-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
-
-
-#research-projects {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-#research-projects h2 {
-    font-size: 2em;
-    color: #2a3d66;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#research-projects h3 {
-    font-size: 1.5em;
-    color: #1a2b3a;
-    margin-top: 40px;
-}
-
-.project-category {
-    background-color: #f7f7f7;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-
-.project-category h4 {
-    font-size: 1.2em;
-    color: #0066cc;
-    margin-bottom: 10px;
-}
-
-.project-category p {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #333;
-}
-
-.project-category p strong {
-    font-weight: bold;
-}
-
-.project-category p:last-child {
-    margin-bottom: 0;
-}
-
-
-.project-gif0 {
-    width: 800px; /* Adjust the width to a smaller size */
-    height: auto; /* Keeps the aspect ratio intact */
-    display: block;
-    margin: 10px auto;
-}
-
-.project-gif {
-    width: 300px; /* Adjust the width to a smaller size */
-    height: auto; /* Keeps the aspect ratio intact */
-    display: block;
-    margin: 10px auto;
-}
-
-.gif-container {
-    display: flex; /* Aligns the GIFs horizontally */
-    justify-content: center; /* Centers the GIFs in the container */
-}
-
-.project-gif2 {
-    width: 400px; /* Keeps your current width */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Makes the GIFs behave like block elements */
-    margin: 10px; /* Adds margin around each GIF */
-}
-
-/* Publications list styling */
-.publications-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.publications-list li {
-    margin-bottom: 18px;
-    padding-left: 20px;
-    position: relative;
-    line-height: 1.6;
-    font-size: 0.95rem;
-}
-
-.publications-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #0077cc;
-    font-size: 1.2rem;
-}
-
-.publications-list em {
-    font-style: italic;
-    color: #444;
-}
-
-.publications-list a {
-    margin-left: 6px;
-    font-size: 0.9rem;
-}
-
-.publications-list a:hover {
-    text-decoration: underline;
-}
-
-
-/* =========================
-   Stats Section
-   ========================= */
-.stats-section {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.stats-box {
-    background: #0077cc;
-    color: #fff;
-    border-radius: 16px;
-    padding: 40px 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.stat h2 {
-    font-size: 2.8rem;
-    margin: 0;
-    font-weight: bold;
-}
-
-.stat p {
-    margin-top: 8px;
-    font-size: 1rem;
-    opacity: 0.95;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-    .stats-box {
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 30px;
-    }
-}
-
-@media (max-width: 500px) {
-    .stats-box {
-        grid-template-columns: 1fr;
-    }
-
-    .stat h2 {
-        font-size: 2.4rem;
-    }
-}
-
-    .stat h2 {
-        font-size: 2.4rem;
-    }
-}
-
-
-
-/* ========================= */
-/* TEACHING PAGE STYLES */
-/* ========================= */
-
-.teaching-page section {
-    background: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.teaching-page h2 {
-    color: #0077cc;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 5px;
-}
-
-/* ========================= */
-/* TEACHING LOGOS – SAME SIZE */
-/* ========================= */
-
-.teaching-logos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.teaching-logo-item {
-    width: 220px;
-    text-align: center;
-}
-
-.teaching-logo-item img {
-    width: 200px;
-    height: 120px;
-    object-fit: contain;   /* preserves aspect ratio */
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 6px;
-}
-
-/* Teaching table */
-.teaching-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    font-size: 0.95rem;
-}
-
-.teaching-table th,
-.teaching-table td {
-    border: 1px solid #ddd;
-    padding: 8px 10px;
-    vertical-align: top;
-}
-
-.teaching-table th {
-    background-color: #f0f2f5;
-    font-weight: bold;
-}
-projec
-.teaching-table tr:nth-child(even) {
-    background-color: #fafafa;
-}
-
-/* Responsive table */
-@media (max-width: 900px) {
-    .teaching-table {
-        font-size: 0.85rem;
-    }
-}
-* ========================= */
-/* PhD Students Page Styles  */
-/* ========================= */
-
-.students-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 20px;
-}
-
-.student-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.student-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.student-card img {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #0077cc;
-    margin-bottom: 15px;
-}
-
-.student-card h2 {
-    margin: 10px 0 5px;
-    color: #0077cc;
-    font-size: 1.2rem;
-}
-
-.student-card .role {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.student-card .description {
-    font-size: 0.9rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.student-card .linkedin {
-    display: inline-block;
-    font-size: 0.9rem;
-    color: #0077cc;
-    border: 1px solid #0077cc;
-    padding: 6px 12px;
-    border-radius: 5px;
-    transition: background 0.2s, color 0.2s;
-}
-
-.student-card .linkedin:hover {
-    background: #0077cc;
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Responsive adjustments */
-@media (max-width: 900px) {
-    .students-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .student-card img {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-
-/* =========================
-   MOBILE OPTIMIZATIONS
-   ========================= */
-
-/* ---------- General ---------- */
-@media (max-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-
-  .container {
-    padding: 15px;
-    gap: 20px;
-  }
-
-  section {
-    padding: 15px;
-  }
-}
-
-/* ---------- Navigation ---------- */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-}
-
-/* ---------- Sidebar ---------- */
-@media (max-width: 600px) {
-  .sidebar img {
-    width: 140px;
-  }
-
-  .sidebar p,
-  .sidebar a {
-    font-size: 0.95rem;
-  }
-}
-
-/* ---------- Headings ---------- */
-@media (max-width: 600px) {
-  .main-content h2 {
-    font-size: 1.4rem;
-  }
-
-  .main-content h3 {
-    font-size: 1rem;
-  }
-}
-
-/* ---------- Images & GIFs ---------- */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.project-gif0,
-.project-gif,
-.project-gif2 {
-  width: 100%;
-  max-width: 100%;
-}
-
-.gif-container {
-  flex-direction: column;
-  align-items: center;
-}
-
-/* ---------- Research Projects ---------- */
-@media (max-width: 600px) {
-  #research-projects h2 {
-    font-size: 1.6rem;
-  }
-
-  #research-projects h3 {
-    font-size: 1.2rem;
-  }
-}
-
-/* ---------- Stats Section ---------- */
-@media (max-width: 600px) {
-  .stats-box {
-    padding: 25px 15px;
-  }
-
-  .stat h2 {
-    font-size: 2rem;
-  }
-
-  .stat p {
-    font-size: 0.9rem;
-  }
-}
-
-/* ---------- Teaching Table (Mobile Scroll) ---------- */
-@media (max-width: 600px) {
-  .teaching-table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-}
-
-/* ---------- Footer ---------- */
-@media (max-width: 600px) {
-  footer {
-    padding: 20px 10px;
-  }
-
-  .footer-left img {
-    max-width: 140px;
-  }
-
-  .footer-center p,
-  .footer-right p {
-    font-size: 0.85rem;
-  }
-}
-
-/* ---------- Students ---------- */
-@media (max-width: 600px) {
-  .student-card {
-    padding: 15px;
-  }
-
-  .student-card img {
-    width: 110px;
-    height: 110px;
-  }
-
-  .student-card h2 {
-    font-size: 1.1rem;
-  }
-}
-
-
-/* =========================
-   SKILLS SECTION
-   ========================= */
-
-.skills-section {
-    background: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
-}
-
-.skills-section h2 {
-    color: #0077cc;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.skill-category {
-    margin-bottom: 25px;
-}
-
-.skill-category h3 {
-    color: #444;
-    margin-bottom: 10px;
-    font-size: 1.05rem;
-}
-
-.skill-carousel {
-    display: flex;
-    overflow-x: auto;
-    gap: 12px;
-    padding-bottom: 5px;
-    scrollbar-width: thin;
-}
-
-.skill-carousel::-webkit-scrollbar {
-    height: 6px;
-}
-
-.skill-carousel::-webkit-scrollbar-thumb {
-    background: #0077cc;
-    border-radius: 3px;
-}
-
-.skill-carousel::-webkit-scrollbar-track {
-    background: #f0f2f5;
-}
-
-.skill-item {
-    flex: 0 0 auto;
-    background: #f0f2f5;
-    padding: 8px 15px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    border: 1px solid #ddd;
-    transition: transform 0.2s;
-}
-
-.skill-item:hover {
-    background: #0077cc;
-    color: #fff;
-    transform: translateY(-2px);
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    .skill-carousel {
-        gap: 8px;
-    }
-
-    .skill-item {
-        padding: 6px 10px;
-        font-size: 0.85rem;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Abderahmane MAROUF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="pages/publications.html">Publications</a></li>
+            <li><a href="pages/teaching.html">Teaching</a></li>
+            <li><a href="pages/talks.html">Talks</a></li>
+            <li><a href="pages/research.html">Research Group</a></li>
+            <li><a href="mailto:amarouf@unistra.fr">Contact</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <img src="images/Abderahmane-Marouf.jpg" alt="Abderahmane MAROUF">
+        <h2>Abderahmane MAROUF</h2>
+        <p>Associate Professor</p>
+        <p>📍 Strasbourg, France</p>
+       <a href="https://www.researchgate.net/profile/Abderahmane-Marouf?ev=hdr_xprf" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate
+        </a>
+      <a href="https://scholar.google.com/citations?user=NL3l9YcAAAAJ&hl=en" target="_blank">
+            <i class="fab fa-google-scholar"></i> Google Scholar
+        </a>
+        <a href="https://www.linkedin.com/in/amarouf/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://orcid.org/0000-0002-5791-3666" target="_blank">
+            <i class="fab fa-orcid"></i> ORCID
+        </a>
+    </div>
+
+    <div class="main-content">
+        <section>
+            <h2>About</h2>
+            <p>
+                Associate Professor at the University of Strasbourg and member of the ICUBE Laboratory.
+                Research interests include fluid mechanics, multiphase modelling boiling and condensation, aerodynamics, turbulence modelling, flow control, and
+                Machine Learning-ROM applied to CFD. </p>
+         <div class="skill-category">
+        <div class="skill-carousel">
+            <div class="skill-item">Aerodynamics</div>
+            <div class="skill-item">Turbulence</div>
+            <div class="skill-item">Machine Learning & ROM</div>
+            <div class="skill-item">Morphing & Flow control</div>
+            <div class="skill-item">Multiphase</div>
+        </div>
+         </div>
+               
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>PhD in Aerodynamics & Turbulence modelling (2017–2020) — University of Strasbourg / Institut National Polytechnique de Toulouse - IMFT Toulouse</li>
+                <li>MSc in Computational Engineering Science (2015–2017) — University of Strasbourg</li>
+                <li>MSc in Aeronautics (2013–2015) — IAES</li>
+                <li>BSc in Aeronautical Engineering (2010–2013) — IAES</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Research Experience & Projects</h2>
+            <ul>
+                <li>Associate Professor, University of Strasbourg (2021–Present)</li>
+                <li>Postdoctoral Researcher — H2020 CleanSky2, collaboration: Leonardo Helicopters-<b>Italy</b>, CFS Engineering, <b>switzerland</b></li>
+                <li>Visiting Researcher: Nagoya University-<b>Japan</b> with Ass. Prof. Tomoaki Watanabe: "Turbulence interfaces" </li>
+                <li>Visiting Researcher: EPFL Lausanne-<b>switzerland</b> with Dr. Jan Vos: "Code development NSMB"</li>
+                <li>Visiting Researcher: Polytechnique de Montréal, <b>Canada</b> with Prof. Eric Laurendeau: "Code development Champs multiphase-multiphsics"</li>
+                <li>Participant in major <b>European</b> & national research programs (Horizon Europe, H2020, CleanSky2, ANR, GARTEUR)</li>
+                <li><b>Collaborators: Turbulence modelling: ONERA-France, CIRA-Italy, DLR-Germany, NLR-Netherlands. Aerodynamics: IMFT-Toulouse, IMP-PAN, Poland, POLIMI-Italy, CFS Engineering-Switzerland, NTUA-Greece. Multiphase: HKA-karlsruhe-Germany, ENSMA-Pprime, Poitiers, LEGI-Grenoble. Gust flows: Ontatio-Tech, Canada </b></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Awards & Distinctions</h2>
+            <ul>
+                <li>PRACE Success Story in Engineering</li>
+                <li>Best Oral Presentation Award — 3AF International Conference (2018)</li>
+                <li>Best Poster Awards — IUTAM & University of Strasbourg</li>
+            </ul>
+        </section>
+  
+
+<section class="stats-section">
+  <div class="stats-box" style="background-color:#f5f5f5;">
+    <div class="stat">
+      <h2 style="color:#333;">100+</h2>
+      <p style="color:#444;"> Publications</p>
+    </div>
+    <div class="stat">
+      <h2 style="color:#333;">13+</h2>
+      <p style="color:#444;">Projects Completed</p>
+    </div>
+    <div class="stat">
+      <h2 style="color:#333;">10+</h2>
+      <p style="color:#444;">Years Experience</p>
+    </div>
+    <div class="stat">
+      <h2 style="color:#333;">10+</h2>
+      <p style="color:#444;">Research partners</p>
+    </div>
+  </div>
+</section>
+
+   
+<section id="research-projects">
+    <h2>Research Projects</h2>
+    
+    <h3>European and ANR National Research Projects</h3>
+    
+    <div class="project-category">
+        <h4>2PhaseEx Two-Phase Exchanger (2024-2027)</h4>
+        <img src="images/2PhasEx1.gif" alt="2PhaseEx Project Animation" class="project-gif">
+        <p>Development of a closed-circuit heat exchanger using thermosyphon principles with eco-friendly fluids for thermal energy recovery.</p>
+        <p><strong>Partners:</strong> ICUBE, Hochschule Karlsruhe, various European and regional institutions.</p>
+    </div>
+
+    <div class="project-category">
+        <h4>BEALIVE-HORIZON EIC (2023-2026)</h4>
+        <img src="images/DDES-RS.gif" alt="DDES-RS" class="project-gif">
+        <p>Creation of a bio-inspired, electro-active "live skin" for morphing wings, using a traveling wave concept for aeronautical applications.</p>
+        <p><strong>Partners:</strong> ICUBE, ONERA, POLIMI, CFS Engineering, etc.</p>
+    </div>
+
+    <div class="project-category">
+        <h4>Micro-FloTec-HORIZON EU (2023-2027)</h4>
+        <p>Advancing heat transfer and thermal management technologies, focusing on multiphase heat transfer performance, flow resistance, and surface modifications.</p>
+        <p><strong>Partners:</strong> ICUBE, Univ. of Rennes, Univ. De Aveiro, various global institutions.</p>
+    </div>
+
+    <div class="project-category">
+        <h4>Garteur EG-78 Hybrid RANS/LES Methods (2021-2024)</h4>
+      <img src="images/synth.png" alt="synth" class="project-gif0">
+        <p>Improving hybrid RANS/LES methods for aerospace design, focusing on aeroacoustics and flow predictions in industry processes.</p>
+        <p><strong>Partners:</strong> ICUBE, ONERA, SAAB, Univ. of Manchester, etc.</p>
+    </div>
+
+    <div class="project-category">
+        <h4>Active Flow Control for Tilt Rotor Aircraft AFC4TR (2020-2022)</h4>
+      <div class="gif-container">
+    <img src="images/HF-DDES.gif" alt="HF-DDES" class="project-gif2">
+    <img src="images/HF-DDES1.gif" alt="HF-DDES1" class="project-gif2">
+     </div>
+        <p>Investigating the use of Active Flow Control (AFC) with pulsed air to manage vortical flow on tilt-rotor aircraft.</p>
+        <p><strong>Partners:</strong> CFS Engineering, EPFL, ICUBE/Unistra, Leonardo Helicopter.</p>
+    </div>
+
+    <div class="project-category">
+        <h4>TEAMAero: Flow Control & Shock Mitigation (2020-2024)</h4>
+      <div class="gif-container">
+       <img src="images/teamaero2.gif" alt="teamaero" class="project-gif2">
+       </div>
+        <p>Improving understanding of shock wave and boundary layer interactions in aeronautics.</p>
+        <p><strong>Partners:</strong> IMFT, IMP-PAN, Gdansk.</p>
+    </div>
+
+    <div class="project-category">
+        <h4>Garteur AG59: Laminar Separation Bubbles (2019-2022)</h4>
+              <img src="images/laminar_transition.png" alt="laminar-separation" class="project-gif0">
+        <p>Enhancing numerical simulations of laminar separation bubbles in aerodynamics.</p>
+        <p><strong>Partners:</strong> CIRA, ONERA, DLR, ICUBE/Unistra.</p>
+    </div>
+
+    <div class="project-category">
+        <h4>Smart Morphing and Sensing SMS, H2020 (2017-2020)</h4>
+        <p>Using electro-active actuators for aircraft high-lift systems to improve aerodynamics.</p>
+        <p><strong>Partners:</strong> INPT, ONERA, POLIMI, NTUA, and others.</p>
+    </div>
+
+    <div class="project-category">
+        <h4>PRACE Allocations</h4>
+        <p>Various research allocations in high-performance computing.</p>
+    </div>
+
+    <h3>National Research Projects</h3>
+    
+    <div class="project-category">
+        <h4>ANR-COMPET (2025-2029)</h4>
+        <p>Modeling compressible two-phase flows for energy and transport applications.</p>
+        <p><strong>Partners:</strong> ICUBE, Pprime-Poitiers, LEGI-Grenoble.</p>
+    </div>
+
+    <div class="project-category">
+        <h4>ANR-EMBIA (2021-2025)</h4>
+        <p>Development of bio-inspired, multiscale live-skin interfaces for aeronautics, inspired by marine biology.</p>
+        <p><strong>Partners:</strong> ICUBE, IMFT, LAPLACE.</p>
+    </div>
+
+    <div class="project-category">
+        <h4>Airbus Morphing Drone Thor MINOTHOR (2020)</h4>
+        <p>Testing hybrid morphing concepts in unmanned aerial drones for real-flight performance.</p>
+        <p><strong>Partners:</strong> Airbus R&T, IMFT, LAPLACE.</p>
+    </div>
+
+    <div class="project-category">
+        <h4>Dynamic Contrast-Enhanced Ultrasonography imaging protocol</h4>
+        <img src="images/Graphical_table_of_content_final.png" alt="ultrasound" class="project-gif0">
+        <p>Numerical simulations for calibration setup for Dynamic Contrast-Enhanced Ultrasonography imaging protocol</p>
+    </div>
+    <div class="project-category">
+        <h4>ANR CAMI (2016)</h4>
+        <img src="images/Visco-elastic-wave.png" alt="visco" class="project-gif0">
+        <p>Biomechanical simulation for medical-surgical interventions, focusing on magnetic resonance elastography.</p>
+        <p><strong>Partners:</strong> ICUBE, AVR Robotics, LAPLACE.</p>
+    </div>
+
+</section>
+
+<footer class="footer-section">
+    <div class="footer-container">
+        <div class="footer-left">
+            <img src="images/icube.png" alt="ICube Laboratory">
+        </div>
+        <div class="footer-center">
+            <p><strong>ICube Laboratory, UMR 7357</strong></p>
+        </div>
+        <div class="footer-right">
+            <p><strong>Address:</strong><br> Manufacture des tabacs de Strasbourg<br> 1 cour des Cigarières, 67070 Strasbourg, France</p>
+        </div>
+    </div>
+</footer>
+  
+  
+  
+</body>
+</html>
