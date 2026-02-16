@@ -784,3 +784,10 @@ section {
     border-radius: 12px;
     margin-bottom: 25px;
 }
+
+.full-width-section section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
