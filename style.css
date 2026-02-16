@@ -791,3 +791,29 @@ section {
     border-radius: 12px;
     margin-bottom: 30px;
 }
+
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: auto;
+}
+
+.top-section {
+    display: flex;
+    flex-wrap: wrap;   /* 🔥 clé importante */
+    gap: 30px;
+}
+
+.sidebar {
+    flex: 1 1 280px;   /* min 280px, mais adaptable */
+}
+
+.about-section {
+    flex: 3 1 500px;
+}
+
+@media (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+    }
+}
